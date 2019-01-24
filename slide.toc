@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Overview}{2}{0}{1}
+\beamer@sectionintoc {2}{Introduction to The Actor Model}{3}{0}{2}
+\beamer@sectionintoc {3}{Introduction to Actix \& Actix-web}{8}{0}{3}
+\beamer@sectionintoc {4}{More trait Types in Actix}{15}{0}{4}

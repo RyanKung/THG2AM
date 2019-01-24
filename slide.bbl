@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+
+\bibitem{actor}
+Richard~Steiger Carl~Hewitt, Peter~Bishop.
+\newblock A universal modular actor formalism for artificial intelligence,
+  1973.
+
+\bibitem{meta}
+Carl Hewitt, Peter Bishop, Irene Greif, Brian Smith, Todd Matson, and Richard
+  Steiger.
+\newblock Actor induction and meta-evaluation.
+\newblock pages 153--168, 10 1973.
+
+\bibitem{picalcu}
+Colin Fidge.
+\newblock A comparative introduction to csp, ccs and lotos.
+
+\bibitem{historyofpi}
+J.C.M. Baeten.
+\newblock A brief history of process algebra.
+
+\bibitem{actoralgebra}
+Gianluigi~Zvattaro Mauro~Gaspari.
+\newblock An algebra of actor.
+
+\bibitem{actix}
+Nikolay Kim.
+\newblock Actix.rs.
+
+\bibitem{bm}
+techempower.
+\newblock Web framework benchmarks.
+
+\end{thebibliography}
