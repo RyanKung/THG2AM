@@ -1,5 +1,9 @@
 # The Hitchhiker's Guide to the Actor Model in Rust
 
+# Slides
+
+[Here you go](https://github.com/RyanKung/THG2AM/blob/master/slide.pdf)
+
 # Overview
 
 * Introduction to Actor Model
