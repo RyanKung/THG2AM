@@ -2,3 +2,5 @@
 \beamer@sectionintoc {2}{Introduction to The Actor Model}{3}{0}{2}
 \beamer@sectionintoc {3}{Introduction to Actix \& Actix-web}{8}{0}{3}
 \beamer@sectionintoc {4}{More trait Types in Actix}{15}{0}{4}
+\beamer@sectionintoc {5}{Ghost in the Shell}{19}{0}{5}
+\beamer@sectionintoc {6}{Issues \& Solutions}{22}{0}{6}

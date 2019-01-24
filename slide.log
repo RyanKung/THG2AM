@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.2)  25 JAN 2019 01:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.2)  25 JAN 2019 01:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1395,7 +1395,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 LaTeX Info: Redefining \includegraphics on input line 229.
 \c@lstlisting=\count325
  (./slide.nav)
-<./ieee-blockchain.png, id=28, 301.125pt x 180.675pt>
+<./ieee-blockchain.png, id=40, 301.125pt x 180.675pt>
 File: ./ieee-blockchain.png Graphic file (type png)
 
 <use ./ieee-blockchain.png>
@@ -1405,63 +1405,63 @@ Package pdftex.def Info: ./ieee-blockchain.png used on input line 234.
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./ieee-
 blockchain.png>]
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 264.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 263.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 264
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 263
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 264
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 263
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 264.
+(Font)              <10> on input line 263.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 264.
+(Font)              <7> on input line 263.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 264.
-LaTeX Font Info:    Try loading font information for U+msa on input line 264.
+(Font)              <5> on input line 263.
+LaTeX Font Info:    Try loading font information for U+msa on input line 263.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 264.
+LaTeX Font Info:    Try loading font information for U+msb on input line 263.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 264.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 263.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 264.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 263.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 264.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 263.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 264.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 263.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 264.
+(Font)              <9> on input line 263.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 264.
+(Font)              <6> on input line 263.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 264.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 263.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 264.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 263.
 
  [2
 
@@ -1476,34 +1476,34 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 333.
+(Font)              <10.95> on input line 332.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 333.
+(Font)              <8> on input line 332.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 333.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 332.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 333.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 332.
 
- <./pialgebra.png, id=213, 546.04pt x 344.28625pt>
+ <./pialgebra.png, id=225, 546.04pt x 344.28625pt>
 File: ./pialgebra.png Graphic file (type png)
 
 <use ./pialgebra.png>
-Package pdftex.def Info: ./pialgebra.png used on input line 333.
+Package pdftex.def Info: ./pialgebra.png used on input line 332.
 (pdftex.def)             Requested size: 180.50203pt x 113.81102pt.
  [7
 
  <./pialgebra.png>]
-<./actix.png, id=246, 644.4075pt x 279.0425pt>
+<./actix.png, id=259, 644.4075pt x 279.0425pt>
 File: ./actix.png Graphic file (type png)
  <use ./actix.png>
-Package pdftex.def Info: ./actix.png used on input line 345.
+Package pdftex.def Info: ./actix.png used on input line 344.
 (pdftex.def)             Requested size: 197.11922pt x 85.35826pt.
 
-<./bm.png, id=249, 1143.27126pt x 167.62625pt>
+<./bm.png, id=262, 1143.27126pt x 167.62625pt>
 File: ./bm.png Graphic file (type png)
  <use ./bm.png>
-Package pdftex.def Info: ./bm.png used on input line 345.
+Package pdftex.def Info: ./bm.png used on input line 344.
 (pdftex.def)             Requested size: 232.85442pt x 34.14322pt.
  [8
 
@@ -1543,20 +1543,67 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
  (./slide.vrb)
 [14
 
-] (./slide.bbl) [15
+]
+\openout4 = `slide.vrb'.
+
+ (./slide.vrb) [15
+
+]
+\openout4 = `slide.vrb'.
+
+ (./slide.vrb) [16
+
+]
+\openout4 = `slide.vrb'.
+
+ (./slide.vrb) [17
+
+]
+\openout4 = `slide.vrb'.
+
+ (./slide.vrb)
+[18
+
+]
+\openout4 = `slide.vrb'.
+
+ (./slide.vrb) [19
+
+]
+\openout4 = `slide.vrb'.
+
+ (./slide.vrb) [20
+
+]
+\openout4 = `slide.vrb'.
+
+ (./slide.vrb) [21
+
+]
+\openout4 = `slide.vrb'.
+
+ (./slide.vrb)
+[22
+
+]
+\openout4 = `slide.vrb'.
+
+ (./slide.vrb) [23
+
+] (./slide.bbl) [24
 
  </usr/local/texlive/2017/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf
->] [16
+>] [25
 
 
 ]
-<./maxresdefault.png, id=512, 714.67pt x 713.66624pt>
+<./maxresdefault.png, id=770, 714.67pt x 713.66624pt>
 File: ./maxresdefault.png Graphic file (type png)
 
 <use ./maxresdefault.png>
-Package pdftex.def Info: ./maxresdefault.png used on input line 492.
+Package pdftex.def Info: ./maxresdefault.png used on input line 615.
 (pdftex.def)             Requested size: 170.95724pt x 170.71652pt.
- [17
+ [26
 
  <./maxresdefault.png>]
 \tf@nav=\write6
@@ -1568,26 +1615,19 @@ Package pdftex.def Info: ./maxresdefault.png used on input line 492.
 \tf@snm=\write8
 \openout8 = `slide.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 493.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 493.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 616.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 616.
  (./slide.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 493.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 493.
-
-
-Package rerunfilecheck Warning: File `slide.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `slide.out':
-(rerunfilecheck)             Before: F03668B8F76523E89E09ABC8823F711F;180
-(rerunfilecheck)             After:  7714B9F8BD816689AB475667F7B87F01;240.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 616.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 616.
+Package rerunfilecheck Info: File `slide.out' has not changed.
+(rerunfilecheck)             Checksum: C229A4297492B4C07FF39B0DA5420F78;349.
  ) 
 Here is how much of TeX's memory you used:
- 36148 strings out of 492995
- 724095 string characters out of 6132705
- 1102352 words of memory out of 5000000
- 38944 multiletter control sequences out of 15000+600000
+ 36294 strings out of 492995
+ 725841 string characters out of 6132705
+ 1102918 words of memory out of 5000000
+ 39052 multiletter control sequences out of 15000+600000
  60156 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,97p,10411b,2254s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1605,10 +1645,10 @@ t/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/public/lm/lmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
 lm/lmtt9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtti10.
 pfb>
-Output written on slide.pdf (17 pages, 1623468 bytes).
+Output written on slide.pdf (26 pages, 1645351 bytes).
 PDF statistics:
- 594 PDF objects out of 1000 (max. 8388607)
- 536 compressed objects within 6 object streams
- 46 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 855 PDF objects out of 1000 (max. 8388607)
+ 786 compressed objects within 8 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

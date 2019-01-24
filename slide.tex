@@ -256,8 +256,7 @@
     \end{itemize}
     \item Ghost in the Shell
     \begin{itemize}
-      \item Tokio \& Mio
-      \item Thread
+      \item Tokio \& Futures
     \end{itemize}
   \item Issues \& Solutions
 \end{itemize}
@@ -474,6 +473,130 @@ fn main() {
 
 
 \section{More trait Types in Actix}
+
+\begin{frame}[fragile]
+  \frametitle{SyncArbiter}
+  Sync actors could be used for cpu bound load.
+
+  Only one sync actor runs within arbiter's thread. Sync actor process one message at a time. Sync arbiter can start multiple threads with separate instance of actor in each.
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{SyncArbiter}
+  By modified the $ping$ example:
+    \begin{lstlisting}[language=Rust]
+struct MyActor { count: usize };
+struct Ping(usize);
+
+impl Actor for MyActor {
+    type Context = SyncContext<Self>;
+}
+
+impl Message for Ping {
+    type Result = usize;
+  }
+
+impl Handler<Ping> for MyActor {
+  type Result = usize;
+  fn handle(&mut self, msg: Ping, ctx: &mut Context<Self>) -> Self::Result {
+    self.count += msg.0;
+    self.count
+  }
+}
+  \end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{SyncArbiter}
+  And start 2 worker as Actor.
+  \begin{lstlisting}[language=Rust]
+fn main() {
+    System::run(|| {
+        let addr = SyncArbiter::start(2, || MyArbiter);
+    });
+}
+  \end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Supervised}
+  Supervisor is a event manager which handler $restart$ event for an $Actor$, and it's quiet useful for implementation an SystemRegistry(wont discuss here):
+  \begin{lstlisting}[language=Rust]
+impl actix::Supervised for MyActor {
+    fn restarting(&mut self, ctx: &mut Context<MyActor>) {
+        println!("restarting");
+    }
+}
+  \end{lstlisting}
+
+\end{frame}
+
+
+
+\section{Ghost in the Shell}
+
+\begin{frame}[fragile]
+  \frametitle{Tokio \& Futures}
+  A common usage of Actor Message calling is like this:
+  \begin{lstlisting}[language=Rust]
+  fn index(state: State<AppState>) -> FutureResponse<HttpResponse> {
+    state
+        .db
+        .send(&some_msg)
+        .from_err()
+        .and_then(|res| mk_json_response(res))
+        .responder()
+      }
+    \end{lstlisting}
+
+    $fn\ and\_then$ is a method function of $ActorFuture$ trait, which is very similar to a regular Future.
+    and also requied a $poll$ method:
+    \begin{lstlisting}[language=Rust]
+fn poll(
+    &mut self,
+    srv: &mut Self::Actor,
+    ctx: &mut <Self::Actor as Actor>::Context
+) -> Poll<Self::Item, Self::Error>
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Tokio \& Futures}
+  After calling $and\_then$, it will return an $AndThen$ which was created by the $Future::and\_then$.
+  \begin{lstlisting}[language=Rust]
+  pub struct AndThen<A, B, F> where
+    A: Future,
+    B: IntoFuture,  { /* fields omitted */ }
+  \end{lstlisting}
+  Which is meaning that the event loop of $Arbiter$ is managing by Tokio and Futures.
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Tokio \& Futures}
+  Let's go check what $actix$ actually did when spawn an $Arbiter$
+  \begin{lstlisting}[language=Rust]
+use tokio::executor::current_thread::spawn;
+use tokio::runtime::current_thread::Builder as RuntimeBuilder;
+impl ArbiterBuilder {
+    fn new() -> Self {
+        ArbiterBuilder {
+            name: None,
+            stop_system_on_panic: false,
+            runtime: RuntimeBuilder::new(),
+        }
+}
+  \end{lstlisting}
+\end{frame}
+\section{Issues \& Solutions}
+\begin{frame}[fragile]
+  \frametitle{No panic!}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Towel Needed}
+\end{frame}
 
 \begin{frame}[allowframebreaks]
     \frametitle{Reference}
