@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: slide.aux
+The top-level auxiliary file: ./slide.aux
 The style file: unsrt.bst
 Database file #1: slide.bib
 Warning--entry type for "actor" isn't style-file defined
@@ -14,7 +14,7 @@ Warning--empty journal in actoralgebra
 Warning--empty year in actoralgebra
 You've used 7 entries,
             1791 wiz_defined-function locations,
-            469 strings with 4041 characters,
+            470 strings with 4050 characters,
 and the built_in function-call counts, 1112 in all, are:
 = -- 78
 > -- 44

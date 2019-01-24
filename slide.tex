@@ -589,20 +589,42 @@ impl ArbiterBuilder {
 }
   \end{lstlisting}
 \end{frame}
+
+
 \section{Issues \& Solutions}
 \begin{frame}[fragile]
   \frametitle{No panic!}
+
+  Addressed to Actix is using $tokio\_threadpool::park$, which is guarantee that the calling function $should$ not panic. So panic in $Handler$ may block the thread, and there is no default strategy for monitor and auto-restarting.
+
+  So which is means that you should wrap any returning value in Result or Option type, and do not panic!
 \end{frame}
 
 \begin{frame}[fragile]
   \frametitle{Towel Needed}
+
+\begin{lstlisting}[language=Rust]
+pub enum HandlerFn<Q, R> {
+    Unary(fn(&ArbiterConnections) -> R),
+    Binary(fn(&ArbiterConnections, &Q) -> R),
+}
+
+pub struct MixedQueryMessage<'a, Q, R> {
+    pub query: Option<Q>,
+    pub handler: &'a HandlerFn<Q, R>,
+}
+
+impl<'a, Q, R: 'static> Message for MixedQueryMessage<'a, Q, R>
+where
+    Q: Sync,
+    R: Send,
+{
+    type Result = R;
+}
+\end{lstlisting}
+
 \end{frame}
 
-\begin{frame}[allowframebreaks]
-    \frametitle{Reference}
-  \bibliographystyle{unsrt}
-  \bibliography{slide}
-\end{frame}
 \begin{frame}
   \frametitle{Thanks}
   \begin{center}
@@ -613,4 +635,11 @@ impl ArbiterBuilder {
     \includegraphics[height=6cm]{./maxresdefault.png}
   \end{center}
 \end{frame}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{Reference}
+  \bibliographystyle{unsrt}
+  \bibliography{slide}
+\end{frame}
+
 \end{document}

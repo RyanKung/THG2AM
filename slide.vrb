@@ -1,1 +1,22 @@
 \frametitle{Towel Needed}
+
+\begin{lstlisting}[language=Rust]
+pub enum HandlerFn<Q, R> {
+    Unary(fn(&ArbiterConnections) -> R),
+    Binary(fn(&ArbiterConnections, &Q) -> R),
+}
+
+pub struct MixedQueryMessage<'a, Q, R> {
+    pub query: Option<Q>,
+    pub handler: &'a HandlerFn<Q, R>,
+}
+
+impl<'a, Q, R: 'static> Message for MixedQueryMessage<'a, Q, R>
+where
+    Q: Sync,
+    R: Send,
+{
+    type Result = R;
+}
+\end{lstlisting}
+
