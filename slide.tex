@@ -399,7 +399,7 @@ fn main() {
   \item $Handler<StopArbiter>$
   \item $Handler<Execute<I, E>>$
   \end{itemize}
-  Where $<StopArbbiter>$ and $<Execute<I, E>$ are impls of $Message$ trait.
+  Where $<StopArbiter>$ and $<Execute<I, E>$ are impls of $Message$ trait.
 \end{frame}
 
 
@@ -522,7 +522,7 @@ fn main() {
 
 \begin{frame}[fragile]
   \frametitle{Supervised}
-  Supervisor is a event manager which handler $restart$ event for an $Actor$, and it's quiet useful for implementation an SystemRegistry(wont discuss here):
+  Supervisor is a event manager which handler $restart$ event for an $Actor$, and it's quite useful for implement an SystemRegistry(wont discuss here):
   \begin{lstlisting}[language=Rust]
 impl actix::Supervised for MyActor {
     fn restarting(&mut self, ctx: &mut Context<MyActor>) {
