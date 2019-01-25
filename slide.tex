@@ -593,7 +593,7 @@ impl ArbiterBuilder {
 
 \section{Issues \& Solutions}
 \begin{frame}[fragile]
-  \frametitle{No panic!}
+  \frametitle{Dont't panic!}
 
   Addressed to Actix is using $tokio\_threadpool::park$, which is guarantee that the calling function $should$ not panic. So panic in $Handler$ may block the thread, and there is no default strategy for monitor and auto-restarting.
 
